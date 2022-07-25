@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/bacc"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="#3fff"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@mipmap/bar">
+            <ImageButton
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="#00000000"
+                app:srcCompat="@mipmap/line" />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.2"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/buy"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="#00000000"
+                app:srcCompat="@mipmap/basket" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/aaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Coke Image"
+                    android:src="@drawable/mt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:text="YES"
+                        android:textSize="50sp" />
+                    <TextView
+                        android:id="@+id/tv_yes_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        android:text="0"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_yes_vote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/b1"
+                        android:text="VOTE"
+                        android:onClick="onYesClicked"
+                        android:textColor="#fff"
+                        tools:ignore="OnClick" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:text="NO"
+                        android:textSize="50sp" />
+                    <TextView
+                        android:id="@+id/tv_no_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        android:text="0"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_no_vote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VOTE"
+                        android:background="@drawable/b2"
+                        android:onClick="onNoClicked"
+                        android:textColor="#fff"
+                        tools:ignore="OnClick" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="0.9"
+    android:padding="5dp"
+    android:background="#534741">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"></LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:background="#00000000"
+            app:srcCompat="@mipmap/a2" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#00000000"
+            app:srcCompat="@mipmap/barcode2" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#00000000"
+            app:srcCompat="@mipmap/settings_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
